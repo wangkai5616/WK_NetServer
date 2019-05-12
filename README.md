@@ -1,5 +1,11 @@
-# WK_NetServer  
-## Technical points
+# WK_NetServer
+## 简介 
+本项目为C++11编写的基于epoll的多线程网络服务器框架，应用层实现了简单的HTTP服务器HttpServer和一个回显服务器EchoServer，其中HTTP服务器实现了HTTP的解析和Get方法请求，目前支持静态资源访问，支持HTTP长连接；该框架不限于这两类服务器，用户可根据需要编写应用层服务。 
+
+## 并发模型
+![Image text](https://raw.githubusercontent.com/wangkai5616/WK_NetServer/master/img-folder/1a5cdf3c6a358e7f471056aafc541aa6_70.png)
+
+## 技术栈
 * 使用epoll边沿触发的IO多路复用技术，非阻塞IO，使用Reactor模式  
 * 使用多线程充分利用多核CPU，并使用线程池避免线程频繁创建销毁的开销
 * 线程池做优化处理，更加高效
