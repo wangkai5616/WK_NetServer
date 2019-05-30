@@ -15,4 +15,7 @@
 * 使用eventfd实现了线程的异步唤醒
 * 采用智能指针管理多线程下的对象资源
 * 使用状态机解析了HTTP请求，支持HTTP长连接
-* 支持优雅关闭连接   
+* 支持优雅关闭连接
+ 
+## 代码统计
+![Image text](https://github.com/wangkai5616/WK_NetServer/blob/master/img-folder/%E4%BB%A3%E7%A0%81%E7%BB%9F%E8%AE%A1.png)
