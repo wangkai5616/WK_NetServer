@@ -61,6 +61,8 @@ void EventLoop::loop()
     quit_ = false;
     while(!quit_)
     {
+		//下面这步会阻塞的原因是调用了epoll_wait
+		//epoll_wait(pollfd_, &*eventlist_.begin(), (int)eventlist_.capacity(), timeout);
         poller_.poll(activechannellist_);
         //std::cout << "server HandleEvent" << std::endl;
         for(Channel *pchannel : activechannellist_)
