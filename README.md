@@ -5,6 +5,9 @@
 ## 并发模型
 ![Image text](https://raw.githubusercontent.com/wangkai5616/WK_NetServer/master/img-folder/1a5cdf3c6a358e7f471056aafc541aa6_70.png)
 
+## 整体结构图
+![Image text](https://raw.githubusercontent.com/wangkai5616/WK_NetServer/master/img-folder/%E9%A1%B9%E7%9B%AE%E7%B1%BB%E5%9B%BE.png)
+
 ## 技术栈
 * 使用epoll边沿触发的IO多路复用技术，非阻塞IO，使用Reactor模式  
 * 使用多线程充分利用多核CPU，并使用线程池避免线程频繁创建销毁的开销
